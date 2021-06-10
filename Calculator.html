@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculator</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div id="total">
+			<div class="calc" id="calc">
+				<main>
+					<ul id="list">
+						<input type="text" name="up" id="up" readonly="readonly" />
+						<input type="text" name="result" id="result" readonly="readonly" />
+						<li id="get">
+							<form method="GET" action="get.php">
+								<input type="text" id="input" name="input" value="" hidden>
+								<button type="submit">GET</button>
+							</form>
+						</li>
+						<li id="del" onclick="getnum('del')">←</li>
+						<li id="×" onclick="getnum('*')">×</li>
+						<li id="÷" onclick="getnum('/')">÷</li>
+						<li id="+" onclick="getnum('+')">+</li>
+						<li id="1" onclick="getnum('1')">1</li>
+						<li id="2" onclick="getnum('2')">2</li>
+						<li id="3" onclick="getnum('3')">3</li>
+						<li id="(" onclick="getnum('(')">(</li>
+						<li id="-" onclick="getnum('-')">-</li>
+						<li id="4" onclick="getnum('4')">4</li>
+						<li id="5" onclick="getnum('5')">5</li>
+						<li id="6" onclick="getnum('6')">6</li>
+						<li id="." onclick="getnum('.')">.</li>
+						<li id="%" onclick="getnum('%')">%</li>
+						<li id="7" onclick="getnum('7')">7</li>
+						<li id="8" onclick="getnum('8')">8</li>
+						<li id="9" onclick="getnum('9')">9</li>
+						<li id="0" onclick="getnum('0')">0</li>
+						<li id=")" onclick="getnum(')')">)</li>
+						<li id="e" onclick="getnum()">e</li>
+						<li id="clear" onclick="getnum('c')">AC</li>
+						<li id="=" onclick="getnum('=')">=</li>
+					</ul>
+				</main>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="calc.js"></script>
+
+	</body>
+
+</html>
